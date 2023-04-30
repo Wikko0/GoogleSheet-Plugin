@@ -1,0 +1,22 @@
+{
+    "name": "wikko/googlesheet",
+    "title": "Google Sheet Plugin",
+    "version": "1.0.0",
+    "app_version": "4.0.24",
+    "description": "Google Sheet integration",
+    "autoload": {
+        "psr-4": {
+            "Wikko\\Googlesheet\\": "src/"
+        }
+    },
+    "extra": {
+        "setting-route": "\\Wikko\\Googlesheet\\Controllers\\DashboardController@index",
+        "laravel": {
+            "providers": [
+                "Wikko\\Googlesheet\\ServiceProvider",
+                "Wikko\\Googlesheet\\GoogleProvider",
+                "Wikko\\Googlesheet\\MigrationProvider"
+            ]
+        }
+    }
+}
